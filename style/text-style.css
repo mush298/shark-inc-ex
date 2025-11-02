@@ -1,0 +1,153 @@
+text-style {
+    display: inline;
+    font-style: normal;
+    font-weight: 1000;
+    text-shadow: 1px 1px 0px black, 0px 0px 2px black, 1px 1px 2px black;
+    color: white;
+
+    &[text="prestige"] {
+        color: #0077ff;
+    };
+
+    &[text="fish"] {
+        color: #ff5500;
+    };
+
+    &[text="shark"] {
+        color: #506b7a;
+    };
+
+    &[text="coral"] {
+        color: #aa0033;
+    };
+
+    &[text="ice"] {
+        color: #0099ff;
+    };
+
+    &[text="salt"] {
+        color: #c0c0c0;
+    };
+
+    &[text="snow"] {
+        color: #aeeaff;
+    };
+
+    &[text="kelp"] {
+        color: #2e8b57;
+    };
+
+    &[text="red"] {
+        color: #a00000;
+    };
+
+    &[text="green"] {
+        color: #00b300;
+    };
+
+    &[text="gold"] {
+        color: #ff8800;
+    };
+
+    &[text="hadron"] {
+        color: #b0a0ff;
+        text-shadow: 1px 1px 0px black, 0px 0px 2px black, 1px 1px 2px black, -1px -1px 2px #a0f, 1px 1px 2px #a0f, -2px -2px 4px #550, 2px 2px 4px #550;
+    };
+
+            @supports (-webkit-background-clip: text) and (-webkit-text-fill-color: transparent) {
+        &[text="core"],
+        &[text="humanoid"],
+        &[text="black-hole"],
+        &[text="observ"],
+        &[text="reserv"],
+        &[text="traject"],
+        &[text="experiment"],
+        &[text="star"],
+        &[text="gal-explore-1"],
+        &[text="gal-explore-2"] {
+            filter: drop-shadow(1px 1px black) drop-shadow(0px 0px 1px black);
+            text-shadow: none;
+        };
+        &[text="gal-explore-0"],
+        &[text="gal-explore-3"] {
+            filter: drop-shadow(1px 1px white) drop-shadow(0px 0px 1px white);
+            text-shadow: none;
+        };
+
+        /* === HARDCORE COLOR VARIANTS === */
+
+        &[text="core"] {
+            background: radial-gradient(circle, #00ffe6 0%, #0077ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        };
+
+        &[text="humanoid"] {
+            background: linear-gradient(#001a00, #00ffaa, #001a00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        };
+
+        &[text="black-hole"] {
+            background: linear-gradient(#7700ff, #220033, #7700ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        };
+
+        &[text="observ"] {
+            background: repeating-linear-gradient(-45deg, #ff00ff, #cc00ff 20px, #ff00ff 40px);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        };
+
+        &[text="reserv"] {
+            background: repeating-linear-gradient(-45deg, #9900ff, #4400ff 20px, #9900ff 40px);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        };
+
+        &[text="traject"] {
+            background: repeating-linear-gradient(-45deg, #ff6600, #ffaa00 20px, #ff6600 40px);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        };
+
+        &[text="experiment"] {
+            background: repeating-linear-gradient(-45deg, #00ff88, #00ffaa 20px, #00ff88 40px);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        };
+
+        &[text="star"] {
+            background: repeating-linear-gradient(90deg, #ffeeaa, #ff88ff 20px, #ffeeaa 40px);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        };
+
+        &[text="gal-explore-0"] {
+            background: linear-gradient(#2200ff, #000022);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        };
+
+        &[text="gal-explore-1"] {
+            background: linear-gradient(#ffccff, #cc00ff, #3300aa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        };
+
+        &[text="gal-explore-2"] {
+            background: linear-gradient(#8800ff, #220033);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        };
+
+        &[text="gal-explore-3"] {
+            background: repeating-conic-gradient(#00ffee 0 25%, #001111 0 50%);
+            background-size: 20px 20px;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        };
+    };
+
+}
